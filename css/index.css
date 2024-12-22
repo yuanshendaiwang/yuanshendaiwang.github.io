@@ -8,6 +8,7 @@ html, body{
     width: 100%;
 }
 
+/* 导航栏样式 */
 .nav{
     position: fixed;
     width: 100%;
@@ -17,6 +18,8 @@ html, body{
     align-items: center;
     justify-content: space-around;
     font-size: 1.5em;
+    z-index: 2;
+    transition: 1s all;
 }
 .nav .left, .nav .right{
     margin: 2em 0 0.5em 0;
@@ -24,7 +27,17 @@ html, body{
 .nav .left span{
     padding: 0 0.5em;
 }
+.nav .left .name{
+    background: linear-gradient(45deg, #4e56b5 0%, #fad0c4 100%);
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+.nav :hover{
+    color: #aaaaaa;
+}
 
+/* 主页样式 */
 .head{
     width: 100%;
     height: 100vh;
@@ -42,16 +55,18 @@ html, body{
 }
 .head .center .word{
     background: linear-gradient(45deg, #4e56b5 0%, #fad0c4 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 3em;
+    color: transparent;
+    background-clip: text;
+    font-size: 2.5em;
     font-weight: bold;
 }
 .head .arrow{
     position: absolute;
+    font-size: 2.5em;
     bottom: 2em;
 }
 
+/* 下滑内容样式 */
 .content{
     width: 100%;
     height: 100px;
