@@ -1,0 +1,1 @@
+const imageSrc = './image/word.png'

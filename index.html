@@ -1,53 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>原神呆王的博客</title>
-    <link rel="shortcut icon" href="../blog/image/shortcuticon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/commom.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./iconfont/index/iconfont.css">
-    <link rel="stylesheet" href="./js/index.js">
-</head>
-<body>
-    <div class="nav">
-        <div class="left">
-            <span class="name">呆王</span>
-            <a href="https://www.yuanshen.com/#/" class="topic">
-                <span class="iconfont icon-shouye">首页</span>
-            </a>
-            <a href="https://www.yuanshen.com/#/" class="topic">
-                <span class="iconfont icon-16">文章</span>
-            </a>
-            <a href="https://www.yuanshen.com/#/" class="topic">
-                <span class="iconfont icon-liuyan">留言</span>
-            </a>
-            <a href="https://www.yuanshen.com/#/" class="topic">
-                <span class="iconfont icon-about">关于</span>
-            </a>
-        </div>
-        <div class="right">
-            <span class="sousuo iconfont icon-sousuo"></span>
-        </div>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>🎉 Happy New Year ~ 🎆</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+
+      body {
+        background-color: #111;
+      }
+
+      .fireworks-canvas, .word-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .word-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+      }
+
+      .word-canvas {
+        will-change: transform;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="fireworks" class="fireworks-canvas"></canvas>
+    <div class="word-container">
+      <canvas id="word" class="word-canvas"></canvas>
     </div>
 
-    <div class="head">
-        <div class="center">
-            <div class="welcome">欢迎来到呆王的博客</div>
-            <div class="word">我喜欢回忆我们的过去</div>
-            <div class="word">那是独属于我们的时光</div>
-        </div>
-        <div class="arrow iconfont icon-xiala"></div>
-    </div>
+    <script src="./js/constants.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/imageSrc.js"></script>
+    <script src="./js/tinycolor.js"></script>
+    <script src="./js/fireworks.js"></script>
+    <script src="./js/word.js"></script>
+    <script src="./js/listener.js"></script>
 
-    <div class="content">
-        <div class="leftnav">
-
-        </div>
-        <div class="rightcontent">
-
-        </div>
-    </div>
-</body>
+  </body>
 </html>
